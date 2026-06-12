@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <h1>Password Generator</h1>
+    <form name="passwordGenerator">
+        <div>
+            <input type="checkbox" name="uppercase" id="uppercase" checked>
+            <label for="uppercase">Символы верхнего регистра</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="lowercase" id="lowercase" checked>
+            <label for="lowercase">Символы нижнего регистра</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="numbers" id="numbers" checked>
+            <label for="numbers">Цифры</label>
+        </div>
+        <div>
+            <input type="checkbox" name="special" id="special" checked>
+            <label for="special">Спецсимволы</label>
+        </div>
+
+        <label for="length">длина пароля</label>
+        <input type="range"
+            name="length"
+               id="lengthSlider"
+               min="4"
+               max="32"
+               step="1"
+               value="10"
+        ><span id="lengthValue"></span>
+    </form>
+    <button id="btn">
+        Generate Password
+    </button>
+    <h1 id="output"></h1>
+    
+</main>
+<script src="index.js"></script>
+</body>
+</html>
